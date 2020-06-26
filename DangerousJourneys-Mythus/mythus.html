@@ -4036,7 +4036,7 @@
           <label class="headershort">Weapon</label><label class="headermidshort">#Att.</label><label class="headershort">&ensp;BAC</label><label class="headershort">Dmg</label><label class="headermidshort">Dmg Type</label>
 
 <fieldset class="repeating_weaponsmelee">
-        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmeleeshowcheck" value="1" checked="false" title="@{repeating_weaponsmelee_$id_weaponsmeleeshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{mel_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span><br/><span name="attr_weaponspecial"></span>
+        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmeleeshowcheck" value="1" checked="false" title="@{repeating_weaponsmelee_$id_weaponsmeleeshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{mel_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?}}} {{dodge=@{target|dodge}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span><br/><span name="attr_weaponspecial"></span>
         <div class="hideable-subs">
           <label class="headershort">Weapon</label><label class="headermidshort">SubArea</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;WP</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;Comp.</label><label class="headermidshort">&ensp;&ensp;&ensp;SF</label><label class="ksheadermidshort">#Att.</label><label class="ksheadermidshort">Dmg Type</label><label class="ksheadermidshort">Damage</label><label class="headermidshort">Reach</label><label class="headermidshort">&ensp;&ensp;&ensp;BAC</label><label class="headermidshort">&ensp;&ensp;&ensp;Durability</label>
 
@@ -4520,7 +4520,7 @@
           <label class="headershort">Weapon</label><label class="headermidshort">#Att.</label><label class="headershort">&ensp;BAC</label><label class="headershort">Dmg</label><label class="headermidshort">Dmg Type</label>
 
 <fieldset class="repeating_weaponsmelee">
-        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmeleeshowcheck" value="1" checked="false" title="@{repeating_weaponsmelee_$id_weaponsmeleeshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{mel_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span>
+        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmeleeshowcheck" value="1" checked="false" title="@{repeating_weaponsmelee_$id_weaponsmeleeshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{mel_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?}}} {{dodge=@{target|dodge}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span>
         <div class="hideable-subs">
           <label class="headershort">Weapon</label><label class="headermidshort">SubArea</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;WP</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;Comp.</label><label class="headermidshort">&ensp;&ensp;&ensp;SF</label><label class="ksheadermidshort">#Att.</label><label class="ksheadermidshort">Dmg Type</label><label class="ksheadermidshort">Damage</label><label class="headermidshort">Reach</label><label class="headermidshort">&ensp;&ensp;&ensp;BAC</label><label class="headermidshort">&ensp;&ensp;&ensp;Durability</label>
                          <input type="text" name="attr_weaponname" title="@{repeating_weaponsmelee_$id_weaponname}" />
@@ -4601,7 +4601,7 @@
       <label class="headershort">Weapon</label><label class="headermidshort">#Att.</label><label class="headershort">&ensp;BAC</label><label class="headershort">Dmg</label><label class="headermidshort">Dmg Type</label><label class="headershort">Range (PB/S/M/L/X)</label>
 
         <fieldset class="repeating_weaponsmissile">
-        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmissileshowcheck" value="1" checked="false" title="@{repeating_weaponsmelee_$id_weaponsmissileshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{range=?{Range|Point Blank,+10|Short,+5|Medium,0|Long,-10|Extreme,-20}}} {{rng_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]+[[?{Range}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]+[[?{Range}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?} ?{Range}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span><span class="lbl" name="attr_weaponrangepb"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponranges"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangem"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangel"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangex"></span>
+        <input type="checkbox" class="toggle-show-subs" name="attr_weaponsmissileshowcheck" value="1" checked="false" title="@{repeating_weaponsmissile_$id_weaponsmissileshowcheck}" /><span class="sheet-headershort" name="attr_weaponname"></span><span class="headermidshort" name="attr_weaponnumatkscomp"></span><button type='roll' name='roll_testattack' value='&{template:attack} {{charname=@{character_name}}} {{name=@{weaponname} }} {{bac=@{weaponbac} }} {{msg=@{dazemessage} }} {{drm=1 }} {{range=?{Range|Point Blank,+10|Short,+5|Medium,0|Long,-10|Extreme,-20}}} {{rng_attack=[[1d100cs<[[floor(0.1*floor(1*([[@{weaponbac}]]+[[?{Range}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?|0}]])))]]cf>[[@{weaponcritfail}]]<[[{floor([[1]]*([[@{weaponbac}]]+[[?{Range}]]-[[@{target|dodge}]]+[[?{Modifiers to Final Attack Chance?}]])),[[@{weaponautofail}]]}kl1]]]] }} {{damage=[[@{weapondmgtot}]] @{weapontype} Damage multiplied by strike location: [[1t[Strike-Location]]]}} {{damage_dice=@{weapondmgtot}}} {{notes=@{weaponspecial}}} {{mods=?{Modifiers to Final Attack Chance?} ?{Range}}} {{dodge=@{target|dodge}}} {{parry=[parry](~target|parry)}}'>BAC:</button><span class="headermidshort" name="attr_weaponbac"></span><button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=([[@{weapondmgtot}]])}}'>Damage:</button><span class="headershort" name="attr_weapondmgtot"></span><span class="headermidshort" name="attr_weapontype"></span><span class="lbl" name="attr_weaponrangepb"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponranges"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangem"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangel"></span><span class="lbl">/</span><span class="lbl" name="attr_weaponrangex"></span>
         <div class="hideable-subs">
           <label class="headershort">Weapon</label><label class="headermidshort">SubArea</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;WP</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;SF</label><label class="ksheadermidshort">&ensp;&ensp;&ensp;ROF</label><label class="ksheadermidshort">Dmg Type</label><label class="ksheadermidshort">Damage</label><label class="headermidshort">&ensp;&ensp;&ensp;&ensp;BAC</label><label class="headermidshort">&ensp;PB</label><label class="headermidshort">&ensp;&ensp;S</label><label class="headermidshort">&ensp;&ensp;M</label><label class="headermidshort">&ensp;&ensp;L</label><label class="headermidshort">&ensp;&ensp;X</label>
 
@@ -4639,7 +4639,7 @@
             <input type="number" name="attr_weaponrangex" title="@{repeating_weaponsmissile_$id_weaponrangex}"/>
             <div class="row">
                 <label class="ksheaderreallylong">Notes</label><label class="headermidshort">Dmg Misc</label><label class="ksheadermidshort">Dmg Comp</label><label class="headermidshort">BAC Misc</label><label class="ksheadermidshort">#Att. Comp</label>
-                <textarea spellcheck="false" class="weapontext" type="text" name="attr_weaponspecial" value="0" title="@{repeating_weaponsmelee_$id_weaponspecial}"></textarea>
+                <textarea spellcheck="false" class="weapontext" type="text" name="attr_weaponspecial" value="0" title="@{repeating_weaponsmissile_$id_weaponspecial}"></textarea>
                 <input type="number" name="attr_weaponmiscdmg" value="0" title="@{repeating_weaponsmissile_$id_weaponmiscdmg}"/>
                 <input type="text" class="midshort" name="attr_weapondmgtot" value="0" title="@{repeating_weaponsmissile_$id_weapondmgtot}"/>
                 <input type="number" name="attr_weaponmiscbac" value="0" title="@{repeating_weaponsmissile_$id_weaponmiscbac}"/>
@@ -26558,7 +26558,7 @@
     <div class="row">
         <span class="lbl">Revision:</span><span name="attr_revision"/></span>
     </div>
-<input class="midshort" type="hidden" name="attr_revision" value="0.97" title="@{revision}"/>
+<input class="midshort" type="hidden" name="attr_revision" value="0.98" title="@{revision}"/>
 
 <input type="checkbox" class="toggle-show-subs" name="attr_characterimportshowcheck" value="1" checked="false" title="@{characterimportshowcheck}" /><span class="lbl">Import New Persona</span>
         <div class="hideable-subs">
@@ -31074,7 +31074,7 @@ on("sheet:opened",function() {
 				};
 			});
         }; 
-        setAttrs({revision:0.97});
+        setAttrs({revision:0.98});
     });
 });
 
@@ -31295,7 +31295,7 @@ on("sheet:opened",function() {
             <tr><td><span class="tcatred">Failure! </span></td></tr>
         {{/rollTotal() mel_attack 0}}
         {{#rollWasCrit() mel_attack}}  
-            <tr><td><span class="tcatgreen">In fact, a Special Success! Damage is Maximum of </span>{{damage_dice}} {{parry}}</td></tr>
+            <tr><td><span class="tcatgreen">In fact, a Special Success! Damage is Maximum of </span>{{damage_dice}}</td></tr>
         {{/rollWasCrit() mel_attack}}
         {{#rollWasFumble() mel_attack}}  
             <tr><td><span class="tcatred">The dreaded Special Failure! </span></td></tr>
@@ -31313,7 +31313,7 @@ on("sheet:opened",function() {
             <tr><td><span class="tcatred">Failure! </span></td></tr>
         {{/rollTotal() rng_attack 0}}
         {{#rollWasCrit() rng_attack}}  
-            <tr><td><span class="tcatgreen">In fact, a Special Success! Damage is Maximum of </span>{{damage_dice}} {{parry}}</td></tr>
+            <tr><td><span class="tcatgreen">In fact, a Special Success! Damage is Maximum of </span>{{damage_dice}}</td></tr>
         {{/rollWasCrit() rng_attack}}
         {{#rollWasFumble() rng_attack}}  
             <tr><td><span class="tcatred">The dreaded Special Failure! </span></td></tr>
@@ -31352,7 +31352,7 @@ on("sheet:opened",function() {
             <tr><td><span class="tcatgreen">In fact, a Special Success!  </span>{{counter}} If damage done to opposing weapon, it is maximum of {{damage_dice}}</td></tr>
         {{/rollWasCrit() parry}}
         {{#rollWasFumble() parry}}  
-            <tr><td><span class="tcatred">The dreaded Special Failure! </span></td></tr>
+            <tr><td><span class="tcatred">The dreaded Special Failure! The hit goes through, horribly! </span></td></tr>
         {{/rollWasFumble() parry}}
 		{{#counter}}
 			<tr><td><span class="tcat">Weapon vs Weapon Damage: </span>{{damage}}</td></tr>
